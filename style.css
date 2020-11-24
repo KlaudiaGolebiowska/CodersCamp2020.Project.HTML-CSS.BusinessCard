@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*::after {
+  box-sizing: inherit;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-image: url("img/double-bubble-outline.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vh;
+}
+
+.container {
+  background-color: white;
+  max-width: 900px;
+  min-height: 500px;
+  margin: auto;
+}
