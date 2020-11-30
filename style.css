@@ -1,3 +1,5 @@
+@import "~normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono:wght@400;700&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -6,7 +8,6 @@ html {
 *:before,
 *::after {
   box-sizing: inherit;
-  font-family: "Nunito", sans-serif;
 }
 
 body {
@@ -15,6 +16,8 @@ body {
   align-items: center;
   justify-content: center;
   min-width: 100vh;
+  font-family: Nunito;
+  color: #234361;
 }
 
 .container {
@@ -22,4 +25,147 @@ body {
   max-width: 900px;
   min-height: 500px;
   margin: auto;
+}
+
+.hero {
+  padding: 74px 16px 88px;
+  max-height: 722px;
+}
+
+.hero__image {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 16px solid #f6f9fd;
+  box-sizing: content-box;
+}
+
+.hero__image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__hello {
+  display: none;
+}
+
+.hero__brackets {
+  display: none;
+}
+
+.hero__header {
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  color: #234361;
+}
+
+.hero__header-special {
+  color: #1070ca;
+}
+
+.hero__description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+
+  
+}
+
+.hero__paragraph-link {
+  font-weight: bold;
+  color: #4da8ff;
+  text-decoration: none;
+  margin-bottom: 48px;
+}
+
+
+.hero__contact {
+  background: #4da8ff;
+  border-radius: 64px;
+  color:white;
+  padding: 4px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.skills {
+
+  background-color: #1070CA;
+  color: white;
+  padding: 64px 16px 88px ;
+}
+
+.skills__header{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center; 
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.skills__section{
+margin-top: 64px;
+}
+
+
+.skills__section-emoji{
+ font-size: 64px;
+ font-weight: bold;
+ line-height: 72px;
+ display: block;
+ text-align: center;
+ margin-top: 64px;
+}
+
+.skills__section-emojii{
+  height: 64px;
+  line-height: 72px;
+  display: block;
+  text-align: center;
+  margin-top: 64px;
+ }
+ 
+
+.skills__section-header{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+  text-align: center;
+  margin: 16px 0 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.skills__section-item{
+  color: #DBEAF7;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.skills__list{
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  color: #DBEAF7;;
+  margin: 0 auto;
+width: 288px;
+list-style-type: none;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.skills__section-item {
+  padding: 0 0 0 24px;
+  margin: 0;
+  list-style-image: url('./img/green-tick.png');
+
 }

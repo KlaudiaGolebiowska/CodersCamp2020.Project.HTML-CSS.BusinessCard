@@ -22,10 +22,7 @@
 
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,600;0,700;1,800&display=swap"
-      rel="stylesheet"
-    />
+  
   </head>
 
   <body>
@@ -33,26 +30,26 @@
       <main>
         <section class="hero">
           <div class="hero__image-container">
-            <img src="img/me.png" alt="Klaudia's photo" />
+            <img class="hero__image" src="img/me.png" alt="Klaudia's photo" />
             <span class="hero__hello">Hey there! 🗽</span>
           </div>
 
           <div class="hero__description">
-            <img src="img/openning.png" alt="Bracket" />
+            <img src="img/openning.png" alt="Bracket" class="hero__brackets" />
             <h1 class="hero__header">
-              My name is Klaudia and I’m an aspiring
+              My name is Klaudia, I’m an aspiring
 
               <span class="hero__header-special">Frontend developer</span> and a
-              keen 3D printing fan.
+              3D printing geek.
             </h1>
             <p class="hero__paragraph">
               You might be interested in checking the list of
-              <a href="#skills">my skills</a> . Don’t forget to have a glimpse
-              at <a href="#projects">my projects</a>. Currently I’m looking for
+              <a class="hero__paragraph-link" href="#skills">my skills</a> . Don’t forget to have a glimpse
+              at <a class="hero__paragraph-link" href="#projects">my projects</a>. Currently I’m looking for
               a new challenges so if you have one -
-              <a href="#contact">contact me</a> 😊
+              <a class="hero__paragraph-link" href="#contact">contact me</a> 😊
             </p>
-            <img src="img/closing.png" alt="Bracket" />
+            <img src="img/closing.png" alt="Bracket" class="hero__brackets"  />
             <a class="hero__contact" href="mailto:k.golebiowska.aim@gmail.com"
               >k.golebiowska.aim@gmail.com</a
             >
@@ -62,14 +59,11 @@
         <section class="skills">
           <h2 class="skills__header">My skills</h2>
           <article class="skills__section">
-            <img
-              class="skills__section-emoji"
-              src="img/know.png"
-              alt="Skills emoji"
-            />
+            <span class="skills__section-emoji"> <img src="./img/know.png" alt="skills emoji"> </span>
+         
             <h4 class="skills__section-header">Working knowledge</h4>
 
-            <ul>
+            <ul class="skills__list">
               <li class="skills__section-item">Semantic HTML5</li>
               <li class="skills__section-item">Flexbox</li>
               <li class="skills__section-item">CSS grid</li>
@@ -84,13 +78,11 @@
           </article>
 
           <article class="skills__section">
-            <img
-              class="skills__section-emoji"
-              src="img/face.png"
-              alt="Skills emoji"
-            />
+           
+
+            <span class="skills__section-emoji"> <img src="./img/face.png" alt="skills emoji"> </span>
             <h4 class="skills__section-header">Know something about</h4>
-            <ul>
+            <ul  class="skills__list">
               <li class="skills__section-item">JavaScript ES6 + features</li>
               <li class="skills__section-item">CSS animations</li>
               <li class="skills__section-item">Working with API</li>
@@ -104,14 +96,11 @@
           </article>
 
           <article class="skills__section">
-            <img
-              class="skills__section-emoji"
-              src="img/school.png"
-              alt="Skills emoji"
-            />
+            <span class="skills__section-emoji"> <img src="./img/school.png" alt="skills emoji"> </span>
+
             <h4 class="skills__section-header">Want to learn</h4>
 
-            <ul>
+            <ul class="skills__list">
               <li class="skills__section-item">React JS</li>
               <li class="skills__section-item">Node JS</li>
               <li class="skills__section-item">Redux</li>
