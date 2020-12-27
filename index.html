@@ -20,9 +20,8 @@
 
     <title>Personal website</title>
 
-    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="node_modules/normalize.css/" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-  
   </head>
 
   <body>
@@ -44,12 +43,13 @@
             </h1>
             <p class="hero__paragraph">
               You might be interested in checking the list of
-              <a class="hero__paragraph-link" href="#skills">my skills</a> . Don’t forget to have a glimpse
-              at <a class="hero__paragraph-link" href="#projects">my projects</a>. Currently I’m looking for
-              a new challenges so if you have one -
+              <a class="hero__paragraph-link" href="#skills">my skills</a> .
+              Don’t forget to have a glimpse at
+              <a class="hero__paragraph-link" href="#projects">my projects</a>.
+              Currently I’m looking for a new challenges so if you have one -
               <a class="hero__paragraph-link" href="#contact">contact me</a> 😊
             </p>
-            <img src="img/closing.png" alt="Bracket" class="hero__brackets"  />
+            <img src="img/closing.png" alt="Bracket" class="hero__brackets" />
             <a class="hero__contact" href="mailto:k.golebiowska.aim@gmail.com"
               >k.golebiowska.aim@gmail.com</a
             >
@@ -59,8 +59,10 @@
         <section class="skills">
           <h2 class="skills__header">My skills</h2>
           <article class="skills__section">
-            <span class="skills__section-emoji"> <img src="./img/know.png" alt="skills emoji"> </span>
-         
+            <span class="skills__section-emoji">
+              <img src="./img/know.png" alt="skills emoji" />
+            </span>
+
             <h4 class="skills__section-header">Working knowledge</h4>
 
             <ul class="skills__list">
@@ -78,11 +80,11 @@
           </article>
 
           <article class="skills__section">
-           
-
-            <span class="skills__section-emoji"> <img src="./img/face.png" alt="skills emoji"> </span>
+            <span class="skills__section-emoji">
+              <img src="./img/face.png" alt="skills emoji" />
+            </span>
             <h4 class="skills__section-header">Know something about</h4>
-            <ul  class="skills__list">
+            <ul class="skills__list">
               <li class="skills__section-item">JavaScript ES6 + features</li>
               <li class="skills__section-item">CSS animations</li>
               <li class="skills__section-item">Working with API</li>
@@ -96,7 +98,9 @@
           </article>
 
           <article class="skills__section">
-            <span class="skills__section-emoji"> <img src="./img/school.png" alt="skills emoji"> </span>
+            <span class="skills__section-emoji">
+              <img src="./img/school.png" alt="skills emoji" />
+            </span>
 
             <h4 class="skills__section-header">Want to learn</h4>
 
@@ -130,30 +134,41 @@
 
           <div class="projects-grid">
             <article class="project">
-              <h3 class="project__title"></h3>
-              <p>
-                <span>project</span>
-                <span> nazwa</span>
-              </p>
+              <div class="project__window">
+                <span class="project__window-circle"></span>
+                <span class="project__window-circle"></span>
+                <span class="project__window-circle"></span>
+              </div>
+              <div class="project__content">
+                <img
+                  class="project__window-github"
+                  src="img/Github_Icon.png"
+                  alt="github logo"
+                />
+                <h3 class="project-grid" class="project__title">
+                  <span class="project__label">project:</span>
+                  <span class="project__title-name"> nazwa</span>
+                </h3>
 
-              <p>
-                <span>description:</span>
-                <span> opis</span>
-              </p>
-              <p>
-                <span>demo:</span>
-                <span>
-                  &lt;<a href="#" title="nazwa projektu - demo">see here</a
-                  >&gt;</span
-                >
-              </p>
-              <p>
-                <span>github:</span>
-                <span>
-                  &lt;<a href="#" title="nazwa projektu - github">see here</a
-                  >&gt;</span
-                >
-              </p>
+                <p class="project-grid">
+                  <span class="project__label">description:</span>
+                  <span> opis</span>
+                </p>
+                <p class="project-grid">
+                  <span class="project__label">demo:</span>
+                  <span>
+                    &lt;<a href="#" title="nazwa projektu - demo">see here</a
+                    >&gt;</span
+                  >
+                </p>
+                <p class="project-grid">
+                  <span class="project__label">github:</span>
+                  <span>
+                    &lt;<a href="#" title="nazwa projektu - github">see here</a
+                    >&gt;</span
+                  >
+                </p>
+              </div>
             </article>
           </div>
         </section>

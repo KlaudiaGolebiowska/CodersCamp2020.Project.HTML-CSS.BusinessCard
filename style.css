@@ -70,8 +70,6 @@ body {
   font-size: 16px;
   line-height: 32px;
   text-align: center;
-
-  
 }
 
 .hero__paragraph-link {
@@ -81,11 +79,10 @@ body {
   margin-bottom: 48px;
 }
 
-
 .hero__contact {
   background: #4da8ff;
   border-radius: 64px;
-  color:white;
+  color: white;
   padding: 4px 24px;
   text-decoration: none;
   font-weight: bold;
@@ -96,76 +93,135 @@ body {
 }
 
 .skills {
-
-  background-color: #1070CA;
+  background-color: #1070ca;
   color: white;
-  padding: 64px 16px 88px ;
+  padding: 64px 16px 88px;
 }
 
-.skills__header{
+.skills__header {
   font-size: 36px;
   font-weight: 700;
   line-height: 48px;
-  text-align: center; 
+  text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.skills__section{
-margin-top: 64px;
+.skills__section {
+  margin-top: 64px;
 }
 
-
-.skills__section-emoji{
- font-size: 64px;
- font-weight: bold;
- line-height: 72px;
- display: block;
- text-align: center;
- margin-top: 64px;
-}
-
-.skills__section-emojii{
+.skills__section-emoji {
   height: 64px;
   line-height: 72px;
   display: block;
   text-align: center;
   margin-top: 64px;
- }
- 
+}
 
-.skills__section-header{
+.skills__section-header {
   font-weight: 700;
   font-size: 24px;
   line-height: 44px;
   text-align: center;
   margin: 16px 0 24px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
 }
 
-.skills__section-item{
-  color: #DBEAF7;
+.skills__section-item {
+  color: #dbeaf7;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
 
-.skills__list{
+.skills__list {
   font-size: 16px;
   font-style: normal;
   line-height: 24px;
-  color: #DBEAF7;;
+  color: #dbeaf7;
   margin: 0 auto;
-width: 288px;
-list-style-type: none;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 288px;
+  list-style-type: none;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 
 .skills__section-item {
   padding: 0 0 0 24px;
   margin: 0;
-  list-style-image: url('./img/green-tick.png');
+  list-style-image: url("./img/green-tick.png");
+}
 
+.projects {
+  padding: 64px 16px 0;
+}
+
+.projects__header {
+  color: #234361;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.projects__paragraph {
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 46px;
+  color: #425a70;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 102px 1fr;
+  column-gap: 8px;
+}
+
+.project {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  background-color: #212528;
+  border-radius: 16px;
+  overflow: hidden;
+  color: #808082;
+  font-family: Roboto Mono;
+  font-size: 13px;
+}
+
+.project__window {
+  background-color: #1e1e1e;
+  height: 40px;
+  border-radius: 0 0 0 16px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.project__window-circle {
+  border-radius: 50%;
+  height: 8px;
+  background-color: #464a4d;
+  display: block;
+  width: 8px;
+  margin-right: 8px;
+  padding-left: 2px;
+}
+
+.project__window-github {
+  height: 20.98px;
+  width: 20.42px;
+}
+
+.project__content {
+  padding: 24px 16px;
+}
+
+.project__title-name {
+  color: #ffff;
+}
+
+.project__label {
+  display: block;
+  text-align: right;
 }
