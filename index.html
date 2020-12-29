@@ -20,7 +20,7 @@
 
     <title>Personal website</title>
 
-    <link href="node_modules/normalize.css/" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -145,10 +145,10 @@
                   src="img/Github_Icon.png"
                   alt="github logo"
                 />
-                <h3 class="project-grid" class="project__title">
-                  <span class="project__label">project:</span>
+                <p class="project-grid" class="project__title">
+                  <span class="project__label__name">project:</span>
                   <span class="project__title-name"> nazwa</span>
-                </h3>
+                </p>
 
                 <p class="project-grid">
                   <span class="project__label">description:</span>
@@ -157,14 +157,160 @@
                 <p class="project-grid">
                   <span class="project__label">demo:</span>
                   <span>
-                    &lt;<a href="#" title="nazwa projektu - demo">see here</a
+                    &lt;<a
+                      class="project__link"
+                      href="#"
+                      title="nazwa projektu - demo"
+                      >see here</a
                     >&gt;</span
                   >
                 </p>
                 <p class="project-grid">
                   <span class="project__label">github:</span>
                   <span>
-                    &lt;<a href="#" title="nazwa projektu - github">see here</a
+                    &lt;<a
+                      class="project__link"
+                      href="#"
+                      title="nazwa projektu - github"
+                      >see here</a
+                    >&gt;</span
+                  >
+                </p>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__window">
+                <span class="project__window-circle"></span>
+                <span class="project__window-circle"></span>
+                <span class="project__window-circle"></span>
+              </div>
+              <div class="project__content">
+                <img
+                  class="project__window-github"
+                  src="img/Github_Icon.png"
+                  alt="github logo"
+                />
+                <p class="project-grid" class="project__title">
+                  <span class="project__label__name">project:</span>
+                  <span class="project__title-name"> nazwa</span>
+                </p>
+
+                <p class="project-grid">
+                  <span class="project__label">description:</span>
+                  <span> opis</span>
+                </p>
+                <p class="project-grid">
+                  <span class="project__label">demo:</span>
+                  <span>
+                    &lt;<a
+                      class="project__link"
+                      href="#"
+                      title="nazwa projektu - demo"
+                      >see here</a
+                    >&gt;</span
+                  >
+                </p>
+                <p class="project-grid">
+                  <span class="project__label">github:</span>
+                  <span>
+                    &lt;<a
+                      class="project__link"
+                      href="#"
+                      title="nazwa projektu - github"
+                      >see here</a
+                    >&gt;</span
+                  >
+                </p>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__window">
+                <span class="project__window-circle"></span>
+                <span class="project__window-circle"></span>
+                <span class="project__window-circle"></span>
+              </div>
+              <div class="project__content">
+                <img
+                  class="project__window-github"
+                  src="img/Github_Icon.png"
+                  alt="github logo"
+                />
+                <p class="project-grid" class="project__title">
+                  <span class="project__label__name">project:</span>
+                  <span class="project__title-name"> nazwa</span>
+                </p>
+
+                <p class="project-grid">
+                  <span class="project__label">description:</span>
+                  <span> opis</span>
+                </p>
+                <p class="project-grid">
+                  <span class="project__label">demo:</span>
+                  <span>
+                    &lt;<a
+                      class="project__link"
+                      href="#"
+                      title="nazwa projektu - demo"
+                      >see here</a
+                    >&gt;</span
+                  >
+                </p>
+                <p class="project-grid">
+                  <span class="project__label">github:</span>
+                  <span>
+                    &lt;<a
+                      class="project__link"
+                      href="#"
+                      title="nazwa projektu - github"
+                      >see here</a
+                    >&gt;</span
+                  >
+                </p>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__window">
+                <span class="project__window-circle"></span>
+                <span class="project__window-circle"></span>
+                <span class="project__window-circle"></span>
+              </div>
+              <div class="project__content">
+                <img
+                  class="project__window-github"
+                  src="img/Github_Icon.png"
+                  alt="github logo"
+                />
+                <p class="project-grid" class="project__title">
+                  <span class="project__label__name">project:</span>
+                  <span class="project__title-name"> nazwa</span>
+                </p>
+
+                <p class="project-grid">
+                  <span class="project__label">description:</span>
+                  <span> opis</span>
+                </p>
+                <p class="project-grid">
+                  <span class="project__label">demo:</span>
+                  <span>
+                    &lt;<a
+                      class="project__link"
+                      href="#"
+                      title="nazwa projektu - demo"
+                      >see here</a
+                    >&gt;</span
+                  >
+                </p>
+                <p class="project-grid">
+                  <span class="project__label">github:</span>
+                  <span>
+                    &lt;<a
+                      class="project__link"
+                      href="#"
+                      title="nazwa projektu - github"
+                      >see here</a
                     >&gt;</span
                   >
                 </p>
@@ -183,25 +329,37 @@
             <ul class="social">
               <li class="social__item">
                 <a class="social__link" href="#">
-                  <img class="social__icon" alt="Link do "
+                  <img
+                    src="./img/github.png"
+                    class="social__icon"
+                    alt="Link do "
                 /></a>
               </li>
 
               <li class="social__item">
                 <a class="social__link" href="#">
-                  <img class="social__icon" alt="Link do "
+                  <img
+                    src="./img/instagram.png"
+                    class="social__icon"
+                    alt="Link do "
                 /></a>
               </li>
 
               <li class="social__item">
                 <a class="social__link" href="#">
-                  <img class="social__icon" alt="Link do "
+                  <img
+                    src="/img/facebook.png"
+                    class="social__icon"
+                    alt="Link do "
                 /></a>
               </li>
             </ul>
 
-            <a class="hero__contact" href="mailto:k.golebiowska.aim@gmail.com"
-              >k.golebiowska.aim@gmail.com</a
+            <a
+              class="hero__contact-special"
+              href="mailto:k.golebiowska.aim@gmail.com"
+            >
+              k.golebiowska.aim@gmail.com</a
             >
           </div>
         </section>
