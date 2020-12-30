@@ -29,8 +29,12 @@
       <main>
         <section class="hero">
           <div class="hero__image-container">
-            <img class="hero__image" src="img/me.png" alt="Klaudia's photo" />
-            <span class="hero__hello">Hey there! 🗽</span>
+            <img class="hero__image" src="img/me3.png" alt="Klaudia's photo" />
+            <span class="hero__bubble"
+              ><span class="hero__hello"
+                >Hey there!
+                <img src="img/hello.png" alt="hello" class="emoji" /> </span
+            ></span>
           </div>
 
           <div class="hero__description">
@@ -38,7 +42,7 @@
             <h1 class="hero__header">
               My name is Klaudia, I’m an aspiring
 
-              <span class="hero__header-special">Frontend developer</span> and a
+              <span class="hero__header-special">frontend developer</span> and a
               3D printing geek.
             </h1>
             <p class="hero__paragraph">
@@ -47,7 +51,9 @@
               Don’t forget to have a glimpse at
               <a class="hero__paragraph-link" href="#projects">my projects</a>.
               Currently I’m looking for a new challenges so if you have one -
-              <a class="hero__paragraph-link" href="#contact">contact me</a> 😊
+              <a class="hero__paragraph-link" href="#contact"
+                >contact me <img src="img/smile.png" alt="smile" class="emoji"
+              /></a>
             </p>
             <img src="img/closing.png" alt="Bracket" class="hero__brackets" />
             <a class="hero__contact" href="mailto:k.golebiowska.aim@gmail.com"
@@ -56,69 +62,71 @@
           </div>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="skills">
           <h2 class="skills__header">My skills</h2>
-          <article class="skills__section">
-            <span class="skills__section-emoji">
-              <img src="./img/know.png" alt="skills emoji" />
-            </span>
+          <div class="skills__column">
+            <article class="skills__section">
+              <span class="skills__section-emoji">
+                <img src="./img/know1.png" alt="skills emoji" />
+              </span>
 
-            <h4 class="skills__section-header">Working knowledge</h4>
+              <h4 class="skills__section-header">Working knowledge</h4>
 
-            <ul class="skills__list">
-              <li class="skills__section-item">Semantic HTML5</li>
-              <li class="skills__section-item">Flexbox</li>
-              <li class="skills__section-item">CSS grid</li>
-              <li class="skills__section-item">JS: Local storage</li>
-              <li class="skills__section-item">Figma</li>
-              <li class="skills__section-item">JS: DOM manipulations</li>
-              <li class="skills__section-item">Trained Scrum Master</li>
-              <li class="skills__section-item">Jira & Asana</li>
-              <li class="skills__section-item">PMBOK</li>
-              <li class="skills__section-item">Lean Managment</li>
-            </ul>
-          </article>
+              <ul class="skills__list">
+                <li class="skills__section-item">Semantic HTML5</li>
+                <li class="skills__section-item">Flexbox</li>
+                <li class="skills__section-item">CSS grid</li>
+                <li class="skills__section-item">JS: Local storage</li>
+                <li class="skills__section-item">Figma</li>
+                <li class="skills__section-item">JS: DOM manipulations</li>
+                <li class="skills__section-item">Trained Scrum Master</li>
+                <li class="skills__section-item">Jira & Asana</li>
+                <li class="skills__section-item">PMBOK</li>
+                <li class="skills__section-item">Lean Managment</li>
+              </ul>
+            </article>
 
-          <article class="skills__section">
-            <span class="skills__section-emoji">
-              <img src="./img/face.png" alt="skills emoji" />
-            </span>
-            <h4 class="skills__section-header">Know something about</h4>
-            <ul class="skills__list">
-              <li class="skills__section-item">JavaScript ES6 + features</li>
-              <li class="skills__section-item">CSS animations</li>
-              <li class="skills__section-item">Working with API</li>
-              <li class="skills__section-item">NPM Scripts</li>
-              <li class="skills__section-item">Progressive web apps</li>
-              <li class="skills__section-item">Git</li>
-              <li class="skills__section-item">Python</li>
-              <li class="skills__section-item">MySQL, SQLite</li>
-              <li class="skills__section-item">Bootstrap</li>
-            </ul>
-          </article>
+            <article class="skills__section">
+              <span class="skills__section-emoji">
+                <img src="./img/face1.png" alt="skills emoji" />
+              </span>
+              <h4 class="skills__section-header">Know something about</h4>
+              <ul class="skills__list">
+                <li class="skills__section-item">JavaScript ES6 + features</li>
+                <li class="skills__section-item">CSS animations</li>
+                <li class="skills__section-item">Working with API</li>
+                <li class="skills__section-item">NPM Scripts</li>
+                <li class="skills__section-item">Progressive web apps</li>
+                <li class="skills__section-item">Git</li>
+                <li class="skills__section-item">Python</li>
+                <li class="skills__section-item">MySQL, SQLite</li>
+                <li class="skills__section-item">Bootstrap</li>
+              </ul>
+            </article>
 
-          <article class="skills__section">
-            <span class="skills__section-emoji">
-              <img src="./img/school.png" alt="skills emoji" />
-            </span>
+            <article class="skills__section">
+              <span class="skills__section-emoji">
+                <img src="./img/school1.png" alt="skills emoji" />
+              </span>
 
-            <h4 class="skills__section-header">Want to learn</h4>
+              <h4 class="skills__section-header">Want to learn</h4>
 
-            <ul class="skills__list">
-              <li class="skills__section-item">React JS</li>
-              <li class="skills__section-item">Node JS</li>
-              <li class="skills__section-item">Redux</li>
-              <li class="skills__section-item">Server side rendering</li>
-              <li class="skills__section-item">Typecript</li>
-              <li class="skills__section-item">Gatsby</li>
-              <li class="skills__section-item">Websockets</li>
-              <li class="skills__section-item">Forms</li>
-              <li class="skills__section-item">MongoDB</li>
-            </ul>
-          </article>
+              <ul class="skills__list">
+                <li class="skills__section-item">React JS</li>
+                <li class="skills__section-item">Node JS</li>
+                <li class="skills__section-item">Redux</li>
+                <li class="skills__section-item">Server side rendering</li>
+                <li class="skills__section-item">Typecript</li>
+                <li class="skills__section-item">Gatsby</li>
+                <li class="skills__section-item">Websockets</li>
+                <li class="skills__section-item">Forms</li>
+                <li class="skills__section-item">MongoDB</li>
+              </ul>
+            </article>
+          </div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
           <h2 class="projects__header">Recent projects</h2>
           <p class="projects__paragraph">
             I started my programming path in 2017. I started with an 8-month

@@ -14,16 +14,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 100vh;
   font-family: Nunito;
   color: #234361;
 }
 
 .container {
   background-color: white;
-  max-width: 900px;
+  min-width: 320px;
   min-height: 500px;
-  margin: auto;
+  margin: 0 auto;
+}
+.emoji {
+  max-height: 20px;
 }
 
 .hero {
@@ -43,6 +45,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .hero__hello {
@@ -53,6 +56,11 @@ body {
   display: none;
 }
 
+.hero__bubble {
+  position: absolute;
+  left: calc(50% + 100px);
+  top: -26px;
+}
 .hero__header {
   font-size: 26px;
   line-height: 32px;
@@ -62,6 +70,7 @@ body {
 
 .hero__header-special {
   color: #1070ca;
+  white-space: nowrap;
 }
 
 .hero__description {
@@ -88,7 +97,6 @@ body {
   font-size: 20px;
   line-height: 40px;
   display: inline-block;
-  margin-top: 20px;
 }
 
 .skills {
@@ -99,10 +107,18 @@ body {
 
 .skills__header {
   font-size: 36px;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 48px;
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.skills__list {
+  font-style: normal;
+  color: #dbeaf7;
+  margin: 0 auto;
+  width: 288px;
+  list-style-type: none;
+  padding: 0;
 }
 
 .skills__section {
@@ -114,40 +130,32 @@ body {
   line-height: 72px;
   display: block;
   text-align: center;
-  margin-top: 64px;
 }
 
 .skills__section-header {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   line-height: 44px;
   text-align: center;
   margin: 16px 0 24px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
 }
-
-.skills__section-item {
-  color: #dbeaf7;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.skills__list {
-  font-size: 16px;
-  font-style: normal;
-  line-height: 24px;
-  color: #dbeaf7;
-  margin: 0 auto;
-  width: 288px;
-  list-style-type: none;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .skills__section-item {
   padding: 0 0 0 24px;
-  margin: 0;
-  list-style-image: url("./img/small-tick.png");
+  margin: 0 0 16px;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+}
+.skills__section-item::before {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  content: "";
+  width: 12px;
+  height: 9px;
+  background: url("./img/small-tick.png");
+  display: block;
 }
 
 .projects {
@@ -161,6 +169,12 @@ body {
   line-height: 48px;
   text-align: center;
   margin-bottom: 46px;
+}
+
+.projects-grid {
+  display: grid;
+  column-gap: 24px;
+  row-gap: 24px;
 }
 
 .projects__paragraph {
@@ -188,7 +202,6 @@ body {
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
-  border: 6px #dbeaf7 solid;
 }
 
 .project__window {
@@ -240,7 +253,7 @@ body {
 }
 
 .project__link {
-  color: #14b5d0;
+  color: #d8bbcc;
 }
 
 .contact {
@@ -304,4 +317,120 @@ body {
   border-radius: 50%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
+}
+
+@media screen and (min-width: 786px) {
+  .container {
+    max-width: 982px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .container {
+    max-width: 1200px;
+  }
+  .hero {
+    max-width: 100%;
+  }
+
+  .hero__hello {
+    display: block;
+    color: white;
+    padding: 16px 19px;
+    border-radius: 16px;
+    background-color: #1070ca;
+    font-weight: bold;
+    font-size: 32px;
+    position: relative;
+  }
+
+  .hero__hello::after {
+    display: block;
+    width: 17.42px;
+    height: 22.66px;
+    background: url("/img/speech.png");
+    content: "";
+    position: absolute;
+    top: 75%;
+    left: 32px;
+  }
+
+  .hero__image {
+    height: 178px;
+    width: 178px;
+    border: 24px solid #f6f9fd;
+  }
+
+  .hero__header {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .hero__paragraph {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .skills__header {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .projects__header {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .projects__paragraph {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .contact__header {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .contact__description {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .skills__column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1184px;
+    margin: 0 auto;
+  }
+  .hero__description {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .hero__description::before {
+    position: absolute;
+    width: 83px;
+    height: 255px;
+    content: "";
+    display: block;
+    background: url(".//img/openning.png");
+    right: 100%;
+    top: 0;
+  }
+  .hero__description::after {
+    position: absolute;
+    width: 83px;
+    height: 255px;
+    content: "";
+    display: block;
+    background: url(".//img/closing.png");
+    left: 100%;
+    top: 0;
+  }
 }
