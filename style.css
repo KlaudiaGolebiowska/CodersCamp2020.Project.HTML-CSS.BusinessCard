@@ -23,6 +23,7 @@ body {
   min-width: 320px;
   min-height: 500px;
   margin: 0 auto;
+  width: 75%;
 }
 .emoji {
   max-height: 20px;
@@ -160,6 +161,7 @@ body {
 
 .projects {
   padding: 64px 16px -24px;
+  margin-top: 64px;
 }
 
 .projects__header {
@@ -182,8 +184,9 @@ body {
   line-height: 32px;
   text-align: center;
   font-weight: 300;
-  padding-bottom: 46px;
   color: #425a70;
+  max-width: 90%;
+  margin: auto 46px;
 }
 
 .project-grid {
@@ -276,6 +279,8 @@ body {
   font-weight: 300;
   color: #425a70;
   font-style: normal;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .hero__contact-special {
@@ -382,15 +387,30 @@ body {
     font-size: 48px;
     line-height: 56px;
   }
-
+  .project__content {
+    padding: 24px 48px 48px;
+  }
+  .project-grid {
+    grid-template-columns: 116px 1fr;
+  }
+  .project__label__name {
+    font-size: 16px;
+    line-height: 24px;
+  }
   .projects__header {
     font-size: 48px;
     line-height: 56px;
+    margin-top: 96px;
   }
 
   .projects__paragraph {
     font-size: 20px;
     line-height: 40px;
+    margin-bottom: 48px;
+  }
+  .project {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .contact__header {
@@ -401,6 +421,7 @@ body {
   .contact__description {
     font-size: 20px;
     line-height: 40px;
+    max-width: 800px;
   }
   .skills__column {
     display: grid;
@@ -432,5 +453,17 @@ body {
     background: url(".//img/closing.png");
     left: 100%;
     top: 0;
+  }
+
+  .contact__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 570px;
+    margin: 64px auto 0;
+  }
+
+  .social {
+    margin: 0;
   }
 }
