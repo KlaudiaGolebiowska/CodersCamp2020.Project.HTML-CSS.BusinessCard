@@ -338,7 +338,7 @@ body {
 }
 
 .hand {
-  animation: wave 0.91s ease-in-out infinite;
+  animation: wave 0.71s ease-in-out infinite;
   display: inline-block;
   transform-origin: center center;
 }
@@ -382,7 +382,7 @@ body {
     background: url("/img/speech.png");
     content: "";
     position: absolute;
-    top: 75%;
+    top: 85%;
     left: 32px;
   }
 
