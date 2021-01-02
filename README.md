@@ -1,4 +1,4 @@
-![cover](https://klaudiagolebiowska.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/img/readme.png.)
+![cover](https://klaudiagolebiowska.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/img/readme.png)
 
 # Klaudia Gołębiowska - aspiring frontend developer
 
