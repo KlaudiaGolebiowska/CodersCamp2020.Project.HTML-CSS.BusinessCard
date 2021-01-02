@@ -6,6 +6,9 @@ My simple portfolio website
 
 ## Tools
 
--HTML
--CSS Grid
--Github
+- - - HTML
+- - - CSS Grid
+
+### Click here to see all
+
+https://klaudiagolebiowska.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/
