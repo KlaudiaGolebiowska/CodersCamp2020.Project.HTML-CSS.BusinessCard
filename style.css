@@ -384,7 +384,7 @@ body {
     display: block;
     width: 17.42px;
     height: 22.66px;
-    background: url("/img/speech.png");
+    background: url(".//img/speech.png");
     content: "";
     position: absolute;
     top: 96%;
