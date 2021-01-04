@@ -101,7 +101,6 @@ body {
   display: inline-block;
   width: 278px;
   height: 48px;
-  justify-content: center;
   align-items: center;
 }
 
@@ -218,7 +217,7 @@ body {
   border-radius: 0 0 0 16px;
   display: flex;
   align-items: center;
-  padding-left: 12px;
+  padding: 12px;
 }
 
 .project__window-circle {
