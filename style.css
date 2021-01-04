@@ -22,8 +22,9 @@ body {
   background-color: white;
   min-width: 320px;
   min-height: 500px;
-  margin: 0 auto;
-  width: 75%;
+  max-width: 94%;
+  left: 16px;
+  right: 16px;
 }
 .emoji {
   max-height: 20px;
@@ -95,9 +96,13 @@ body {
   padding: 4px 24px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 16px;
+  line-height: 32px;
   display: inline-block;
+  width: 278px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills {
@@ -362,6 +367,7 @@ body {
   }
   .hero {
     max-width: 100%;
+    max-height: 856px;
   }
 
   .hero__hello {
