@@ -14,7 +14,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Nunito;
+  font-family: Nunito, serif;
   color: #234361;
 }
 
@@ -102,8 +102,12 @@ body {
   width: 278px;
   height: 48px;
   align-items: center;
+  vertical-align: middle;
+  overflow: auto;
 }
-
+.hero__contact-span {
+  text-align: center;
+}
 .skills {
   background-color: #1070ca;
   color: white;
